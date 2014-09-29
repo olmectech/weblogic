@@ -2,9 +2,6 @@ Oracle WebLogic / Fusion Middleware puppet module
 =================================================
 [![Build Status](https://travis-ci.org/biemond/biemond-wls.png)](https://travis-ci.org/biemond/biemond-wls)
 
-created by Edwin Biemond  email biemond at gmail dot com   
-[biemond.blogspot.com](http://biemond.blogspot.com)    
-[Github homepage](https://github.com/biemond/puppet)  
 [Oracle OpenWorld presentation, how to roll out a complete FMW environment in less than 10 minutes](http://www.slideshare.net/biemond/fmw-puppet-oow13)  
 
 Should work for Solaris x86 64, Windows, RedHat, CentOS, Ubuntu, Debian, Suse SLES or OracleLinux 
