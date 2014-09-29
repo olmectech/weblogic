@@ -1,0 +1,221 @@
+{
+  "author": "Edwin Biemond",
+  "checksums": {
+    ".travis.yml": "49be538e990a4d6a7a4e710ac23c8bef",
+    "Gemfile": "3a5d9751e4e24b862b1fda2f507d33a2",
+    "License": "da7d8b642432b13765207d2c382a6555",
+    "Modulefile": "12ee3b89140a65ae40d79785b1a598e6",
+    "README.md": "7069e894ac0abcf392c60e890253ec6d",
+    "Rakefile": "773d3ed1165f02fc1a9527c45b701011",
+    "example_conf_1_server_with_wls12.1.2_ora_db12c.txt": "90d808406a3f1fd183ab171aa7cf6593",
+    "example_conf_2_multi_node_domain_with_cluster.txt": "09380aa860f1c88bba3cc525544f1eb1",
+    "example_conf_3_wls12.1.2_standard.txt": "0d6814360d52f54b793bc37945ff02db",
+    "example_conf_4_weblogic_10.3.6_osb_soa_ps6.txt": "fc5b76cced04dd5052cbc872fde4cdec",
+    "example_conf_5_weblogic_10.3.6_webcenter_portal_content_ps6.txt": "55b2241dba312d04f2afd166910c1017",
+    "example_conf_6_wls12_windows_standard.txt": "f574f278819b54fc3111931cc2ce28f8",
+    "example_conf_7_oim_oam_11.1.2.1.txt": "0e2a3517a000f69b673d3aaf800a52d9",
+    "lib/facter/oracle_middleware_homes.rb": "c41d744ea6fbc80be8e80c8ef3484b31",
+    "lib/puppet/parser/functions/artifact_exists.rb": "235371155750b23ce1cce8107772ad10",
+    "lib/puppet/parser/functions/bsu_exists.rb": "82341e7e2174993ffda6646d6550fbad",
+    "lib/puppet/parser/functions/domain_exists.rb": "1ceba935aba8a53f4c0d555f040c7715",
+    "lib/puppet/parser/functions/oim_configured.rb": "7e2fdd815785f45cc84c5d8ace5fcd3a",
+    "lib/puppet/parser/functions/opatch_exists.rb": "0a8d4cfafebe82e5a5ce1cb3db98a48c",
+    "lib/puppet/parser/functions/oracle_exists.rb": "67b5a6a34bf4e7db0556dccb35048b6b",
+    "lib/puppet/parser/functions/osb_cluster_configured.rb": "bf9e42e38da3a453309a1e6b567d3a42",
+    "lib/puppet/parser/functions/slash_replace.rb": "2f7c8b591938400e3015baee6f0ab56e",
+    "lib/puppet/parser/functions/soa_cluster_configured.rb": "bd45f8cd1427033fe683f15778224c09",
+    "lib/puppet/parser/functions/wls_exists.rb": "7107d1a70afdfa7bc6397ecd8b31dff4",
+    "lib/puppet/provider/bsu_patch/bsu_patch.rb": "1f20907c5ffa55a56fd2a6d9a4ced3b2",
+    "lib/puppet/provider/opatch/opatch.rb": "548e5472c8ad907442520a1317b53ece",
+    "lib/puppet/type/bsu_patch.rb": "7e5a4391a746dacd85331ade12121c41",
+    "lib/puppet/type/opatch.rb": "4bdc6ddc5499d25ac91aa15ee189b25c",
+    "manifests/bsupatch.pp": "8685578f435312830701b5b33928824a",
+    "manifests/changefmwlogdir.pp": "1e6ef49356cdbc2cd2e8aaa899c1bb0e",
+    "manifests/copydomain.pp": "0afe5b13a4de029902e622a302bee242",
+    "manifests/init.pp": "ee9f7365ae9ff38cbf5adc5a6546ee8d",
+    "manifests/installadf.pp": "85671602fa5cf7f8b7e18bad0d2d9ef5",
+    "manifests/installjdev.pp": "d689a4752122952a2157c55418595a6c",
+    "manifests/installoim.pp": "381e552b3b2dde401dc8e44be0497ddf",
+    "manifests/installosb.pp": "e5cef166947dc4d235584663dd4397d2",
+    "manifests/installsoa.pp": "7ce2867ab5c04f0cb4f9cc58866d18d9",
+    "manifests/installwc.pp": "e39f7a78349deb0e37d1f91f25ee302f",
+    "manifests/installwcc.pp": "7d7ef32cdb14a6ab42c83fffb9b6725b",
+    "manifests/installwebtier.pp": "6d4e9f5d96f62fb83e6a840fe641d2cb",
+    "manifests/installwls.pp": "cdbed71ffeece4c7bb3d6a172e3016e2",
+    "manifests/nodemanager.pp": "bb3978d0a26dc3c3403f24f6d57c35d2",
+    "manifests/oimconfig.pp": "2a041d4c3beb842f3b1e4a95f135217a",
+    "manifests/opatch.pp": "7c358d0604e63133869adea542debd6e",
+    "manifests/packdomain.pp": "585c9f450f51da433393a7babe4a0057",
+    "manifests/params.pp": "8549614176b6cb29f1377178927bac35",
+    "manifests/resourceadapter.pp": "c92cdf1581f5df5a9075ad68c632730e",
+    "manifests/storeuserconfig.pp": "769e71de9595b393857be3164264bc82",
+    "manifests/urandomfix.pp": "17a926cf81002e10b11d05b0160d5127",
+    "manifests/utils/defaultusersfolders.pp": "ee675eb60b1fa124a6e398d3e55a139c",
+    "manifests/utils/orainst.pp": "04cabda0c4f34b8ebb7c5abd67d42274",
+    "manifests/utils/rcu.pp": "5f41102f29246e6247b6e4e8830e3093",
+    "manifests/wlscontrol.pp": "83562e479913406d8d2b0ab239bf610a",
+    "manifests/wlsdeploy.pp": "6d432812fc269384ae8a36acb4b95e48",
+    "manifests/wlsdomain.pp": "779a8b08f758135e4702e6b0b36ba521",
+    "manifests/wlstexec.pp": "0bbbd45f66d1afc46540421530767893",
+    "spec/spec.opts": "a600ded995d948e393fbe2320ba8e51c",
+    "spec/spec_helper.rb": "3ea886dd135e120afa31e0aab12e85b0",
+    "templates/adapter_plans/Plan_AQ.xml.erb": "55912febad20be53912d0f67ed3978ef",
+    "templates/adapter_plans/Plan_DB.xml.erb": "a0f0acf659e009bf763da34f34881002",
+    "templates/adapter_plans/Plan_JMS.xml.erb": "8703d6a7ee1f57582521bde740eda5b7",
+    "templates/domains/domain.xml.erb": "0d7acfff8f4c7ba2f08a5e398fa9e40c",
+    "templates/domains/domain_adf.xml.erb": "f63e21af2a94e479d33ff3fae7a08b42",
+    "templates/domains/domain_oim.xml.erb": "38c75cd1e50e64877d26004ab9aa0e7b",
+    "templates/domains/domain_osb.xml.erb": "e9b48703422eeffca204fa4678ceafec",
+    "templates/domains/domain_osb_soa_bpm.xml.erb": "a628751bfcb8e8baa202e228378833ac",
+    "templates/domains/domain_soa_bpm.xml.erb": "29dcaa028bcffd0f83a4289f2ccf3386",
+    "templates/domains/domain_wc.xml.erb": "9dda54efb510d0a39f912db20e953020",
+    "templates/domains/domain_wc_wcc_bpm.xml.erb": "6f4b51c2ad37d2c58e6cf3d52c973cbd",
+    "templates/importOSB.py.erb": "b2e62e6c58b3bbc4fcc80ce3afb19065",
+    "templates/nodemgr/nodemanager.properties.erb": "f3175479f882b55f8d6f5f2eff9cc945",
+    "templates/nodemgr/nodemanager.properties_1212.erb": "4e92bbab688b82c1cc2c700aa1ff597e",
+    "templates/oim/oim_design.rsp.erb": "fb09c66188cb02161cd7d16b3b2fe5fe",
+    "templates/oim/oim_remote.rsp.erb": "9b10a0822b5984aa20cb0d79060fa229",
+    "templates/oim/oim_server.rsp.erb": "582dcbe319bea24b018a216986b03303",
+    "templates/silent.xml.erb": "025b69bdfef1043ef44f379e45c8b8ae",
+    "templates/silent_1212.xml.erb": "ce816dae88440b5abd0a5ada3bff13db",
+    "templates/silent_1212_adf.xml.erb": "2bc85aecefe615e6ea23b7a3cab5a91e",
+    "templates/silent_adf.xml.erb": "89e0368addcae429502ecccb734d8232",
+    "templates/silent_jdeveloper.xml.erb": "8901b9feff8f55a5cb65691a62854c61",
+    "templates/silent_jdeveloper_1212.xml.erb": "4fd1bc932d6b1f2b3185dcd8f42cb5e7",
+    "templates/silent_oim.xml.erb": "a78917aa2d996bbdf096508213a2dda7",
+    "templates/silent_osb.xml.erb": "57b6bcdc58d4b8c8078f7e37e11e4e2a",
+    "templates/silent_osb_oepe.xml.erb": "2e4f76778cf781281ab17ec54aaad0fe",
+    "templates/silent_soa.xml.erb": "989bbb6fcaa01d0ebfb415c603d02bcd",
+    "templates/silent_wc.xml.erb": "a1dbdc44e734c6b60466d4fab44a853a",
+    "templates/silent_wcc.xml.erb": "7bde2c48e2ea0b51e94238bc88ed040e",
+    "templates/silent_webtier.xml.erb": "e3705ba806812c6494444d44c882744b",
+    "templates/utils/oraInst.loc.erb": "70013a28b30ebc30277c6464895c1ffd",
+    "templates/utils/rcu_passwords.txt.erb": "f7ca7a0a3838dc9de3e591b5462db3a7",
+    "templates/wlst/changeFMWLogFolder.py.erb": "51a617190ead42e412e3d09d4414bc5d",
+    "templates/wlst/createCluster.py.erb": "eea74888faa1dbc9b20a5b8bec032ae6",
+    "templates/wlst/createCoherenceCluster.py.erb": "d273397f2d423d9cd1634d1691083ee8",
+    "templates/wlst/createDynamicCluster.py.erb": "ac87c11d0a92f9c6514c1aaf4ffdad6e",
+    "templates/wlst/createFilePersistenceStore.py.erb": "4d1cbbd8a320194001a1ef38a49a4839",
+    "templates/wlst/createFilePersistenceStore2.py.erb": "ea93a725083574066b2796079804d1d0",
+    "templates/wlst/createJdbcDatasource.py.erb": "e99dbf34febdf444dc6da38b37454c59",
+    "templates/wlst/createJdbcPersistenceStore.py.erb": "fa213fa3f86c39fe151d0813d8cbd192",
+    "templates/wlst/createJmsConnectionFactory.py.erb": "5cf721787e2e2d3dff052e0d8d8f0b79",
+    "templates/wlst/createJmsForeignServer.py.erb": "3a25049de74c908d4f9bc510dd32a77f",
+    "templates/wlst/createJmsForeignServerObject.py.erb": "17ecca3fb0ba00a42c318601cbfd4568",
+    "templates/wlst/createJmsModule.py.erb": "cee4a21aa63e76e92b524dd63f093741",
+    "templates/wlst/createJmsQueueOrTopic.py.erb": "7e685188873c6fef6d7e441014209d17",
+    "templates/wlst/createJmsQuota.py.erb": "dab1b0b330525273f7661ca0a94a6c66",
+    "templates/wlst/createJmsServer.py.erb": "62b12a3789c61e17e43c2a5e342a164b",
+    "templates/wlst/createJmsServer2.py.erb": "9d9cdf06d2fc3487d807ea5e798df2c2",
+    "templates/wlst/createJmsSubDeployment.py.erb": "b9a5257bb38b7281f20eefcf64bae38f",
+    "templates/wlst/createMachine.py.erb": "e354eab86e1093c92d21daa7ebaebb2c",
+    "templates/wlst/createResourceAdapterEntry.py.erb": "f803c35d5e6d3149e0ca9c4f346ec1d7",
+    "templates/wlst/createSAFAgents.py.erb": "860a6d02ecc62dce9ccdc0380e0bc944",
+    "templates/wlst/createSAFImportedDestination.py.erb": "8147f1cc099d84890e7193552dc95d32",
+    "templates/wlst/createSAFImportedDestinationObject.py.erb": "ac68bd89baaa93b418dfb791434dfb93",
+    "templates/wlst/createSAFRemoteContext.py.erb": "261df3258dcd797dff331f162b144332",
+    "templates/wlst/createServer.py.erb": "0ca10c07e3890b2e14024c92b068371a",
+    "templates/wlst/createServerTemplateCluster.py.erb": "c51a47eba3ebd1f73069ada65a878116",
+    "templates/wlst/createUsersAndGroups.py.erb": "ae9e4c1b129390914e4969368df0958b",
+    "templates/wlst/enrollDomain.py.erb": "c2adc9ef01f87f75f96fad6d1a4b9b17",
+    "templates/wlst/redeployResourceAdapter.py.erb": "de8e6a75f82b463d6e45eda9372321c6",
+    "templates/wlst/startWlsManagedServer2.py.erb": "b3b0142d17cdc7b70dc57812c98c6195",
+    "templates/wlst/startWlsServer.py.erb": "66f806a9216a3fa4406930a8587da50a",
+    "templates/wlst/startWlsServer2.py.erb": "4cced7abcc8057d3cf9cd8a2ab3beaa5",
+    "templates/wlst/stopWlsManagedServer2.py.erb": "b6a76e9f3f849ca35046024fee27781e",
+    "templates/wlst/stopWlsServer.py.erb": "9137967fd90303649e5a301743eeef24",
+    "templates/wlst/stopWlsServer2.py.erb": "141a00105ccf6edc05e9df9f21c4fc51",
+    "templates/wlst/storeUserConfig.py.erb": "77f6fd0ef58624008b34e9b1f5fba6ae"
+  },
+  "dependencies": [
+    {
+      "name": "puppetlabs/registry",
+      "version_requirement": "\u003e\u003d0.1.1"
+    }
+  ],
+  "description": "Oracle WebLogic / Fusion Middleware puppet module for Linux, Solaris and Windows",
+  "license": "Apache 2.0",
+  "name": "biemond-wls",
+  "project_page": "http://technology.amis.nl/2012/10/13/configure-fmw-servers-with-puppet/",
+  "source": "https://github.com/biemond/puppet/tree/master/modules/wls",
+  "summary": "Oracle WebLogic / Fusion Middleware ( ADF, OSB, WebCenter, SOA Suite, WebCenter ,OAM, OIM) puppet module",
+  "types": [
+    {
+      "properties": [
+        {
+          "name": "ensure",
+          "doc": "Whether a patch should be applied."
+        }
+      ],
+      "parameters": [
+        {
+          "name": "name",
+          "doc": "        The name of the BSU WebLogic Patch.\n"
+        },
+        {
+          "name": "os_user",
+          "doc": "        The weblogic operating system user.\n"
+        },
+        {
+          "name": "middleware_home_dir",
+          "doc": "        The middleware home folder.\n"
+        },
+        {
+          "name": "jdk_home_dir",
+          "doc": "        The JDK home folder.\n"
+        },
+        {
+          "name": "weblogic_home_dir",
+          "doc": "        The weblogic home home folder.\n"
+        }
+      ],
+      "providers": [
+        {
+          "name": "bsu_patch"
+        }
+      ],
+      "name": "bsu_patch"
+    },
+    {
+      "properties": [
+        {
+          "name": "ensure",
+          "doc": "Whether a patch should be applied."
+        }
+      ],
+      "parameters": [
+        {
+          "name": "name",
+          "doc": "        The name of the OPatch.\n"
+        },
+        {
+          "name": "os_user",
+          "doc": "        The weblogic operating system user.\n"
+        },
+        {
+          "name": "oracle_product_home_dir",
+          "doc": "        The oracle prodcut home folder.\n"
+        },
+        {
+          "name": "jdk_home_dir",
+          "doc": "        The JDK home folder.\n"
+        },
+        {
+          "name": "orainst_dir",
+          "doc": "        The orainst folder.\n"
+        },
+        {
+          "name": "extracted_patch_dir",
+          "doc": "        The extracted patch folder.\n"
+        }
+      ],
+      "providers": [
+        {
+          "name": "opatch"
+        }
+      ],
+      "name": "opatch"
+    }
+  ],
+  "version": "1.4.0"
+}
